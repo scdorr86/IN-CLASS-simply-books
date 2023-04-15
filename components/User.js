@@ -1,14 +1,9 @@
-/* import { useRouter } from 'next/router';
-import PropTypes from 'prop-types';
+import { useAuth } from '../utils/context/authContext';
 
-export default function User({ image, name, email, lastLogin }) {
-  const router = useRouter();
-  const { firebaseKey } = router.query;
+export default function User() {
+  const { user } = useAuth();
+
+  return (
+    <div>user: {user.image}{user.name}{user.email}{user.metadata.lastSignInTime}</div>
+  );
 }
-
-User.propTypes = {
-  image: PropTypes.image,
-  name: PropTypes.string,
-  email: PropTypes.string,
-  lastLogin: PropTypes.string,
-}; */
