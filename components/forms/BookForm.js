@@ -54,7 +54,7 @@ function BookForm({ obj }) {
       <h2 className="text-white mt-5">{obj.firebaseKey ? 'Update' : 'Create'} Book</h2>
 
       {/* TITLE INPUT  */}
-      <FloatingLabel controlId="floatingInput1" label="Book Title" className="mb-3">
+      <FloatingLabel controlId="floatingInput1" label="Book Title" className="mb-3" style={{ color: 'red' }}>
         <Form.Control
           type="text"
           placeholder="Enter a title"
@@ -66,7 +66,7 @@ function BookForm({ obj }) {
       </FloatingLabel>
 
       {/* IMAGE INPUT  */}
-      <FloatingLabel controlId="floatingInput2" label="Book Image" className="mb-3">
+      <FloatingLabel controlId="floatingInput2" label="Book Image" className="mb-3" style={{ color: 'red' }}>
         <Form.Control
           type="url"
           placeholder="Enter an image url"
@@ -78,7 +78,7 @@ function BookForm({ obj }) {
       </FloatingLabel>
 
       {/* PRICE INPUT  */}
-      <FloatingLabel controlId="floatingInput3" label="Book Price" className="mb-3">
+      <FloatingLabel controlId="floatingInput3" label="Book Price" className="mb-3" style={{ color: 'red' }}>
         <Form.Control
           type="text"
           placeholder="Enter price"
@@ -90,7 +90,7 @@ function BookForm({ obj }) {
       </FloatingLabel>
 
       {/* AUTHOR SELECT  */}
-      <FloatingLabel controlId="floatingSelect" label="Author">
+      <FloatingLabel controlId="floatingSelect" label="Author" style={{ color: 'red' }}>
         <Form.Select
           aria-label="Author"
           name="author_id"
@@ -114,7 +114,7 @@ function BookForm({ obj }) {
       </FloatingLabel>
 
       {/* DESCRIPTION TEXTAREA  */}
-      <FloatingLabel controlId="floatingTextarea" label="Description" className="mb-3">
+      <FloatingLabel controlId="floatingTextarea" label="Description" className="mb-3" style={{ color: 'red' }}>
         <Form.Control
           as="textarea"
           placeholder="Description"
