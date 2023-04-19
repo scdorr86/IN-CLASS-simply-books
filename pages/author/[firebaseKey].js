@@ -8,7 +8,6 @@ export default function ViewAuthor() {
   const router = useRouter();
   const { firebaseKey } = router.query;
 
-
   const getAllAuthorBooks = () => {
     viewAuthorDetails(firebaseKey).then(setAuthorDetails);
   };
